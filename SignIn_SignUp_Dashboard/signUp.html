@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2ceb5ab9e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signUp_style.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Sign Up to <span>Xenosis</span> </h2>
+        <form action="dashboard.html" class="sign-up-form">
+            <div class="form-container">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Create Password" required>
+                <div class="checkbox-field">
+                    <input type="checkbox" name="agree" id="terms" required>
+                    <label for="terms">I agree to Xenosis's <a href="#modal" id="modal-link">Terms of
+                            Service</a></label>
+                </div>
+                <input type="submit" value="Agree and Continue" class="btn">
+            </div>
+        </form>
+        <br>
+        <div class="hr-with-text">or</div>
+        <p class="login-text">Already have an account? <a href="signIn.html">Sign In</a></p>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="close">
+            <h3>Terms of Service</h3>
+            <button class="btn-close" id="close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="terms-list">
+            <ul role="list">
+                <div class="list-item__wrap">
+                    <li class="list-item">Introduction</li>
+                    <p class="list-item__description">Welcome to Xenosis! These Terms of Service govern your use of our
+                        website operated by Xenosis.</p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Accounts</li>
+                    <p class="list-item__description">When you create an account with us, you must provide us with
+                        information that is accurate, complete, and current at all times. Failure to do so constitutes a
+                        breach of the Terms, which may result in immediate termination of your account on our Service.
+                    </p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Intellectual Property</li>
+                    <p class="list-item__description">The Service and its original content, features, and functionality
+                        are and will remain the exclusive property of Xenosis and its licensors.</p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Termination</li>
+                    <p class="list-item__description">We may terminate or suspend your account immediately, without
+                        prior notice or liability, for any reason whatsoever, including without limitation if you breach
+                        the Terms.</p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Limitation of Liability</li>
+                    <p class="list-item__description">In no event shall Xenosis, nor its directors, employees, partners,
+                        agents, suppliers, or affiliates, be liable for any indirect, incidental, special,
+                        consequential, or punitive damages, including without limitation, loss of profits, data, use,
+                        goodwill, or other intangible losses, resulting from
+                        (i) your use or inability to use the Service;
+                        (ii) any unauthorized access to or use of our servers and/or any personal information stored
+                        therein.
+                    </p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Governing Law</li>
+                    <p class="list-item__description">These Terms shall be governed and construed in accordance with the
+                        laws of India, without regard to its conflict of law provisions.</p>
+                </div>
+                <div class="list-item__wrap">
+                    <li class="list-item">Changes</li>
+                    <p class="list-item__description">We reserve the right, at our sole discretion, to modify or replace
+                        these Terms at any time. If a revision is material, we will try to provide at least 30 days’
+                        notice prior to any new terms taking effect. What constitutes a material change will be
+                        determined at our sole discretion.</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <script src="signUp_script.js"></script>
+</body>
+
+</html>

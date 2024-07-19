@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ceb5ab9e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dashboard_style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h4>Dashboard</h4>
+        <div class="profile">
+            <span class="fas fa-search"></span>
+            <div class="user">
+                <img class="profile-image" src="./images/profile_pic.svg" alt="profile">
+                <p class="profile-name">Xenosis</p>
+            </div>
+        </div>
+    </nav>
+
+    <input type="checkbox" name="toggle" id="toggle">
+    <label class="side-toggle" for="toggle">
+        <span class="fas fa-bars"></span>
+    </label>
+
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fas fa-clipboard-list"></span>
+            <p>Overview</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-users"></span>
+            <p>Teams</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-credit-card"></span>
+            <p>Payment</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-chart-line"></span>
+            <p>Statistics</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-id-card"></span>
+            <p>Contact</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-cog"></span>
+            <p>Settings</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="card total1">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Revenue</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h2><span>₹</span>10,75,200</h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total2">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Total Orders</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h2>10,200 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total3">
+                <div class="info">
+                    <div class="info">
+                        <div class="info-detail">
+                            <h3>Customers</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h2>500 <span>Companies</span></h2>
+                        </div>
+                        <div class="info-image">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card total4">
+                <div class="info">
+                    <div class="info-detail">
+                        <h3>Daily Orders</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h2>40 <span>Orders</span></h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card detail">
+                <div class="detail-header">
+                    <h2>All Orders</h2>
+                    <button>See more</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Company Name</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Created</th>
+                        <th>Last Updated</th>
+                    </tr>
+                    <tr>
+                        <td>#XE-001</td>
+                        <td>Potential Corp</td>
+                        <td><span class="status inprogress"><i class="fas fa-circle"></i>In Progress</span></td>
+                        <td>₹ 3,700</td>
+                        <td>Apr 11, 2024</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#XE-002</td>
+                        <td>WDC Corp</td>
+                        <td><span class="status confirmed"><i class="fas fa-circle"></i>Completed</span></td>
+                        <td>₹ 999</td>
+                        <td>Jan 15, 2024</td>
+                        <td>Yesterday</td>
+                    </tr>
+                    <tr>
+                        <td>#XE-003</td>
+                        <td>LEX Corp</td>
+                        <td><span class="status fulfilled"><i class="fas fa-circle"></i>Fulfilled</span></td>
+                        <td>₹ 1999</td>
+                        <td>Feb 14, 2024</td>
+                        <td>Feb 21, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>#XE-004</td>
+                        <td>Potential Corp</td>
+                        <td><span class="status inprogress"><i class="fas fa-circle"></i>In Progress</span></td>
+                        <td>₹ 3,700</td>
+                        <td>Apr 11, 2024</td>
+                        <td>Today</td>
+                    </tr>
+                    <tr>
+                        <td>#XE-005</td>
+                        <td>WDC Corp</td>
+                        <td><span class="status confirmed"><i class="fas fa-circle"></i>Completed</span></td>
+                        <td>₹ 999</td>
+                        <td>Jan 15, 2024</td>
+                        <td>Yesterday</td>
+                    </tr>
+                    <tr>
+                        <td>#XE-006</td>
+                        <td>LEX Corp</td>
+                        <td><span class="status fulfilled"><i class="fas fa-circle"></i>Fulfilled</span></td>
+                        <td>₹ 1999</td>
+                        <td>Feb 14, 2024</td>
+                        <td>Feb 21, 2024</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card customer">
+                <h2>Sales Activities</h2>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="./images/client_pic.svg" alt="customer">
+                    <div class="customer-name">
+                        <h4>John Doe</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">Today</p>
+                </div>
+
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="./images/client_pic.svg" alt="customer">
+                    <div class="customer-name">
+                        <h4>John Doe</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">Today</p>
+                </div>
+
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="./images/client_pic.svg" alt="customer">
+                    <div class="customer-name">
+                        <h4>John Doe</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">Today</p>
+                </div>
+
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="./images/client_pic.svg" alt="customer">
+                    <div class="customer-name">
+                        <h4>John Doe</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p class="customer-date">Today</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

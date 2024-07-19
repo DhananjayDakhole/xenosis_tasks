@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --white: #f5f5f5;
+    --yellow-orange: #DECBA4;
+    --metal-green: #3E5151;
+    --red: rgba(255, 0, 0, 0.5);
+    --yellow: rgba(248, 230, 28, 0.5);
+    --green: rgba(28, 239, 0, 0.5);
+    --blue: #1f26875e;
+    --border: #ffffff2e;
+}
+
+body {
+    background: var(--metal-green);
+    background: -webkit-gradient(linear, left top, right top, from(var(--yellow-orange)), to(var(--metal-green)));
+    background: -o-linear-gradient(left, var(--yellow-orange), var(--metal-green));
+    background: linear-gradient(to right, var(--yellow-orange), var(--metal-green));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card-body {
+    background: #ffffff1f;
+    -webkit-box-shadow: 0 8px 32px 0 var(--blue);
+    box-shadow: 0 8px 32px 0 var(--blue);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    max-width: 400px;
+}
+
+.card-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+button {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+button:active {
+    -webkit-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    transform: translateY(-5%);
+}
+
+#decrement {
+    background: var(--red);
+    -webkit-box-shadow: 0 8px 32px 0 var(--blue);
+    box-shadow: 0 8px 32px 0 var(--blue);
+}
+
+#reset {
+    background: var(--yellow);
+    -webkit-box-shadow: 0 8px 32px 0 var(--blue);
+    box-shadow: 0 8px 32px 0 var(--blue);
+
+}
+
+#increment {
+    background: var(--green);
+    -webkit-box-shadow: 0 8px 32px 0 var(--blue);
+    box-shadow: 0 8px 32px 0 var(--blue);
+}
+
+@media only screen and (max-width: 420px) {
+    .card-body {
+        width: 95%;
+    }
+
+    .card-btn {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

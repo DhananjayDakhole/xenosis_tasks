@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #222222;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ebfffc;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    color: #ffffff;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button span {
+    font-size: 30px;
+    color: #555555;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 32px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -8px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media (max-width: 460px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .search input {
+        padding: 8px 20px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search button span {
+        font-size: 25px;
+    }
+
+    .weather-icon {
+        width: 150px;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .details {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .col img {
+        width: 30px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        padding: 25px 18px;
+    }
+
+    .search input {
+        padding: 7px 18px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .search button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .search button span {
+        font-size: 22px;
+    }
+
+    .weather-icon {
+        width: 140px;
+    }
+
+    .weather h1 {
+        font-size: 55px;
+    }
+
+    .weather h2 {
+        font-size: 32px;
+    }
+
+    .details {
+        padding: 0 8px;
+        margin-top: 18px;
+    }
+
+    .col img {
+        width: 25px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    .search input {
+        padding: 6px 15px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .search button span {
+        font-size: 20px;
+    }
+
+    .weather-icon {
+        width: 130px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .details {
+        padding: 0 5px;
+        margin-top: 15px;
+    }
+
+    .col img {
+        width: 20px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px;
+    }
+}

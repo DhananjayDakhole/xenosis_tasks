@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --main-bg-color: #17202A;
+  --main-bg-color-2:#5945ed4d;
+  --main-color: #F8F9FC;
+  --sec-bg-color: #5844ED;
+  --progress-color: #85ED44;
+  --delete-color: #ED4485;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto 0 auto;
+  max-width: 500px;
+}
+
+.stats-container {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 2px solid var(--sec-bg-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.details {
+  width: 100%;
+  font-family: var(--main-font);
+}
+
+#progressBar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--main-bg-color-2);
+  border-radius: 0.25rem;
+  margin-top: 1.25rem;
+
+}
+
+#progress {
+  width: 0%;
+  height: 0.5rem;
+  background-color: var(--progress-color);
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+#numbers {
+  width: 100px;
+  height: 100px;
+  background-color: var(--sec-bg-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--body-font);
+}
+
+form {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  font-family: var(--body-font);
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--main-bg-color-2);
+  border: 1px solid var(--sec-bg-color);
+  font-family: var(--body-font);
+  border-radius: 0.5rem;
+  outline: none;
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sec-bg-color);
+  border: none;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: normal;
+  outline: none;
+}
+
+#task-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-bg-color-2);
+  padding: 0.75rem;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task .checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: var(--progress-color);
+}
+
+.checkbox:checked+p {
+  text-decoration: line-through;
+  color: var(--progress-color);
+}
+
+.taskItem i {
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+i.fa-pen-to-square {
+  color: var(--sec-bg-color);
+}
+
+i.fa-trash-can {
+  color: var(--delete-color);
+}
